@@ -15,4 +15,13 @@ public class Player : MonoBehaviour
     {
         
     }
+
+
+    public float speed = 15f;
+
+    private void FixedUpdate()
+    {
+        float x = Input.GetAxis("Horizontal") * Time.fixedDeltaTime;
+
+    }
 }
