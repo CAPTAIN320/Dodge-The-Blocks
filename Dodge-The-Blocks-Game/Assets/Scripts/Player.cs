@@ -12,7 +12,8 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        // Get the Player Prefab
+        rb = GetComponent<Rigidbody2D>(); 
     }
     void Update()
     {
@@ -23,8 +24,10 @@ public class Player : MonoBehaviour
     {
         float x = Input.GetAxis("Horizontal") * Time.fixedDeltaTime;
 
-        Vector2 newPosition = rb.position + Vector2.right * x;
+        // Move player in both left & right by multiplying by x
+        Vector2 newPosition = rb.position + (Vector2.right * x); // 
 
+        // Restrict player position on screen
         newPosition.x = Mathf.Clamp(newPosition.x, -mapWidth, mapWidth);
 
 
