@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class BlockSpawner : MonoBehaviour
 {
+
+    public Transform[] spawnPoinnts;
+
     // Start is called before the first frame update
     void Start()
     {
