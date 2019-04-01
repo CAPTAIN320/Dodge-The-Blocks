@@ -46,7 +46,7 @@ public class BlockSpawner : MonoBehaviour
 
     private void OnCollisionEnter2D()
     {
-
+        FindObjectOfType<GameManager>().EndGame();
         Debug.Log("We got Hit");
     }
 }
