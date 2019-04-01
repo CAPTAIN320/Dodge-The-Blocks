@@ -44,4 +44,9 @@ public class BlockSpawner : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D()
+    {
+
+        Debug.Log("We got Hit");
+    }
 }
