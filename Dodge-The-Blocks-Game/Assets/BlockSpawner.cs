@@ -9,7 +9,9 @@ public class BlockSpawner : MonoBehaviour
 
     public GameObject blockPrefab;
 
-    private float timeToSpawn = 02f;
+    private float timeToSpawn = 2f;
+
+    public float timeBetweenWaves = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +25,7 @@ public class BlockSpawner : MonoBehaviour
         if (Time.time >= timeToSpawn)
         {
             SpawnBlocks();
+            timeToSpawn = Time.time + timeBetweenWaves;
         }
         
     }
