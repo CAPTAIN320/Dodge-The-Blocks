@@ -9,6 +9,6 @@ public class GameManager : MonoBehaviour
 
 
 
-        Debug.Log("Ending Game");
+        Debug.Log("ENDING GAME!!!");
     }
 }

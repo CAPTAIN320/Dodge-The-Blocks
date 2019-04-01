@@ -33,4 +33,10 @@ public class Player : MonoBehaviour
 
         rb.MovePosition(newPosition);
     }
+
+    private void OnCollisionEnter2D()
+    {
+        FindObjectOfType<GameManager>().EndGame();
+        Debug.Log("We got Hit");
+    }
 }
