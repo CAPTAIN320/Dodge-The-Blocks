@@ -9,8 +9,25 @@ public class BlockSpawner : MonoBehaviour
 
     public GameObject blockPrefab;
 
+    private float timeToSpawn = 02f;
+
     // Start is called before the first frame update
     void Start()
+    {
+        
+        
+    }
+
+    void Update()
+    {
+        if (Time.time >= timeToSpawn)
+        {
+            SpawnBlocks();
+        }
+        
+    }
+
+    void SpawnBlocks()
     {
         int randomNumber = Random.Range(0, spawnPoints.Length);
 
@@ -22,7 +39,6 @@ public class BlockSpawner : MonoBehaviour
                 Instantiate(blockPrefab, spawnPoints[i].position, Quaternion.identity);
             }
         }
-        
     }
-    
+
 }
