@@ -8,8 +8,18 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        StartCoroutine(RestartLevel());
 
         Debug.Log("ENDING GAME!!!");
     }
+
+    IEnumerator RestartLevel()
+    {
+        //b4 1 sec
+        yield return new WaitForSeconds(1f);
+
+        //after 1 sec
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
 }
