@@ -5,8 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    public float speed = 15f;
-    public float mapWidth = 5f;
+    public float speed = 10f;
+    public float mapWidth = 3f;
 
     private Rigidbody2D rb;
 
@@ -39,4 +39,5 @@ public class Player : MonoBehaviour
         FindObjectOfType<GameManager>().EndGame();
         Debug.Log("We got Hit");
     }
+
 }
