@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        float x = Input.GetAxis("Horizontal") * Time.fixedDeltaTime;
+        float x = Input.GetAxis("Horizontal") * Time.fixedDeltaTime * speed;
 
         // Move player in both left & right by multiplying by x
         Vector2 newPosition = rb.position + (Vector2.right * x); // 
