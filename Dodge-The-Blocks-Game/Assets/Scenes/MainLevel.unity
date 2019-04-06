@@ -258,6 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15991d0061eac5b43ba51bf28270d235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slowness: 10
 --- !u!4 &615504505
 Transform:
   m_ObjectHideFlags: 0
@@ -527,7 +528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
-  mapWidth: 10
+  mapWidth: 5
 --- !u!61 &1211592434
 BoxCollider2D:
   m_ObjectHideFlags: 0
