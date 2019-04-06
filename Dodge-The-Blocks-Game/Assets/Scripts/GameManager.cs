@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     IEnumerator RestartLevel()
     {
 
+        //slowing down time
         Time.timeScale = 1f / slowness;
         Time.fixedDeltaTime = Time.fixedDeltaTime / slowness;
 
