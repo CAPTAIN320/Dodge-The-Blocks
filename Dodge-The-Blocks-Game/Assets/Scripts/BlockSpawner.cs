@@ -13,13 +13,6 @@ public class BlockSpawner : MonoBehaviour
 
     public float timeBetweenWaves = 1f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-        
-    }
-
     void Update()
     {
         if (Time.time >= timeToSpawn)
