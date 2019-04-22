@@ -15,10 +15,6 @@ public class Player : MonoBehaviour
         // Get the Player Prefab
         rb = GetComponent<Rigidbody2D>(); 
     }
-    void Update()
-    {
-        
-    }
 
     void FixedUpdate()
     {
